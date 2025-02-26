@@ -1,66 +1,38 @@
-## Foundry
+```
+# MoodNFT Project
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+## Overview
+MoodNFT is an ERC-721 based NFT that reflects the owner's mood. The NFT can be in either a HAPPY or SAD state.
 
-Foundry consists of:
+## Contracts
+- `BasicNft.sol`: A simple ERC-721 NFT contract.
+- `MoodNft.sol`: A dynamic NFT that changes based on the owner's mood.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
-
-## Documentation
-
-https://book.getfoundry.sh/
-
-## Usage
-
-### Build
-
-```shell
-$ forge build
+## Compilation
+Run the following command to compile the contracts:
+```sh
+make compile
 ```
 
-### Test
-
-```shell
-$ forge test
+## Deployment
+To deploy the contract, run:
+```sh
+make deploy
 ```
 
-### Format
-
-```shell
-$ forge fmt
+## Cleaning
+To remove compiled files, run:
+```sh
+make clean
 ```
 
-### Gas Snapshots
+## Mood States
+The MoodNFT supports two states:
 
-```shell
-$ forge snapshot
-```
+### HAPPY 😊
+![Happy Mood](https://upload.wikimedia.org/wikipedia/commons/3/3a/Happy_face.svg)
 
-### Anvil
+### SAD 😞
+![Sad Mood](https://upload.wikimedia.org/wikipedia/commons/7/7b/Sad_face.svg)
 
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+🚀
