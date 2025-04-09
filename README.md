@@ -1,4 +1,3 @@
-```
 # MoodNFT Project
 
 ## Overview
@@ -29,10 +28,9 @@ make clean
 ## Mood States
 The MoodNFT supports two states:
 
-### HAPPY 😊
-![Happy Mood](https://upload.wikimedia.org/wikipedia/commons/3/3a/Happy_face.svg)
+## HAPPY 😊
+![Happy Mood](./img/happy.svg)
 
-### SAD 😞
-![Sad Mood](https://upload.wikimedia.org/wikipedia/commons/7/7b/Sad_face.svg)
+## PUG 🐶
 
-🚀
+![Pug Img](./img/pug.png)
